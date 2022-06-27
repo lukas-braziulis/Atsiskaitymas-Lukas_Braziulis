@@ -1,0 +1,297 @@
+body {
+  color: #555;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+header nav a:last-child {
+  color: rgb(240, 128, 146);
+}
+
+.fa-bars {
+  color: rgb(155, 155, 155);
+  font-size: 1.75rem;
+}
+
+header nav {
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem;
+}
+
+h3 {
+  text-transform: uppercase;
+  color: rgb(240, 128, 146);
+  font-weight: 700;
+  font-size: medium;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-weight: 900;
+  color: black;
+  font-size: 3rem;
+}
+
+#section-01 {
+  display: flex;
+  margin: 4rem;
+}
+
+#section-01 div {
+  flex-grow: 2;
+}
+
+#section-01 img {
+  height: 20rem;
+  flex-grow: 1;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+button {
+  background-color: transparent;
+  border: 4px solid red;
+  padding: 1.25rem 3rem 1.25rem 3rem;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+#section-02 {
+  background-image: url("./assets/assets/background.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 20rem;
+
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding: 7rem 4rem 1rem 4rem;
+}
+
+h2 {
+  font-size: 3.75rem;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 0px;
+  letter-spacing: 2px;
+}
+
+#section-02 p {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  color: black;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+#section-03 {
+  margin: 4rem;
+  padding-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#section-04 {
+  margin: 4rem;
+}
+
+#section-04 p {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  letter-spacing: 1px;
+}
+
+#section-04 p a {
+  text-decoration: underline;
+  font-weight: 550;
+}
+
+#section-04 div figure {
+  margin: 0;
+  margin-bottom: 5rem;
+}
+
+h4,
+h5,
+h6,
+span {
+  margin: 0;
+}
+
+.nft-card div {
+  background-color: rgb(240, 238, 238);
+  width: 290px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.nft-content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  /* grid-gap: 10px; */
+  align-items: center;
+  padding: 20px 20px 0px 20px;
+}
+
+.nft-content-grid h2 {
+  color: orangered;
+  padding-bottom: 10px;
+  font-weight: 300;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.nft-content-grid h4 {
+  color: #555;
+  padding-bottom: 10px;
+  font-weight: 300;
+  font-size: 0.8rem;
+  text-align: right;
+}
+
+.nft-content-grid h6 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding-bottom: 10px;
+  color: black;
+}
+.nft-content-grid span {
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding-bottom: 13px;
+  color: black;
+  text-align: right;
+  margin: 0;
+}
+
+.nft-content-grid h3 {
+  color: #555;
+  font-weight: 300;
+  font-size: 1rem;
+  margin: 0;
+  padding-bottom: 17px;
+}
+
+.nft-content-grid h5 {
+  color: #555;
+  font-weight: 300;
+  font-size: 1rem;
+  margin: 0;
+  text-align: right;
+  padding-bottom: 20px;
+}
+
+/* Kaip padaryti ta no-wrap normaliai?! */
+
+.nft-card {
+  display: inline-block;
+}
+
+#all-cards {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+/* nes sh. gaunas */
+
+#section-05 {
+  height: 38rem;
+  padding-left: 4rem;
+  padding-bottom: 4rem;
+  display: flex;
+}
+
+#section-05 div {
+  align-self: flex-start;
+  flex-grow: 1;
+}
+
+#section-05 img {
+  align-self: flex-end;
+  flex-grow: 1;
+}
+
+#section-05 div h2 {
+  font-size: 3.75rem;
+  font-weight: 900;
+  color: black;
+  letter-spacing: 1px;
+  font-weight: 900;
+  color: black;
+}
+
+#section-05 div h3 {
+  text-transform: uppercase;
+  color: rgb(240, 128, 146);
+  font-weight: 700;
+  font-size: medium;
+  letter-spacing: 1px;
+}
+
+#section-05 div p {
+  width: 70%;
+}
+
+#section-06 {
+  padding-left: 4rem;
+}
+
+#section-06 p {
+  font-size: 1.25rem;
+}
+
+.fa-brands {
+  padding-right: 0.7rem;
+  color: rgb(177, 174, 174);
+  margin-bottom: 3rem;
+  font-size: 1.15rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-link-headline {
+  font-weight: bold;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  text-transform: uppercase;
+}
+
+li {
+  padding-bottom: 0.5rem;
+  columns: #555;
+  font-size: 1.25rem;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+footer {
+  color: rgb(194, 187, 187);
+  text-align: center;
+}
