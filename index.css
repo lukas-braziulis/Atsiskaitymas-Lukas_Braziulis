@@ -28,7 +28,8 @@ header {
   margin: 4rem;
 }
 
-h3 {
+#section-01 div h3,
+#section-05 div h3 {
   text-transform: uppercase;
   color: rgb(240, 128, 146);
   font-weight: 700;
@@ -47,12 +48,17 @@ h1 {
   margin: 4rem;
 }
 
-#section-01 div {
-  flex-grow: 2;
+.pinkBalvonas img {
+  overflow: auto;
+  z-index: 1;
 }
 
-#section-01 img {
-  height: 20rem;
+.section-01-part-a {
+  flex-grow: 2;
+  z-index: 2;
+}
+
+.pinkBalvonas {
   flex-grow: 1;
 }
 
@@ -62,12 +68,34 @@ p {
 }
 
 button {
-  background-color: transparent;
-  border: 4px solid red;
-  padding: 1.25rem 3rem 1.25rem 3rem;
+  position: relative;
+  border: 4px solid transparent;
   border-radius: 50px;
+  background: white;
+  background-clip: padding-box;
+  padding: 10px;
+  width: 11rem;
+  height: 4.5rem;
+  text-align: center;
   font-weight: bold;
   font-size: 1.25rem;
+}
+
+button::after {
+  position: absolute;
+  top: -4px;
+  bottom: -4px;
+  left: -4px;
+  right: -4px;
+  background: linear-gradient(
+    90deg,
+    rgba(223, 10, 154, 1) 0%,
+    rgba(238, 32, 5, 1) 31%,
+    rgba(181, 255, 0, 1) 100%
+  );
+  content: "";
+  z-index: -1;
+  border-radius: 50px;
 }
 
 #section-02 {
@@ -77,9 +105,8 @@ button {
   background-repeat: no-repeat;
   height: 20rem;
 
-  margin-top: 5rem;
   margin-bottom: 5rem;
-  padding: 7rem 4rem 1rem 4rem;
+  padding: 4rem 4rem 1rem 4rem;
 }
 
 h2 {
@@ -146,7 +173,6 @@ span {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
-  /* grid-gap: 10px; */
   align-items: center;
   padding: 20px 20px 0px 20px;
 }
@@ -199,10 +225,12 @@ span {
   padding-bottom: 20px;
 }
 
-/* Kaip padaryti ta no-wrap normaliai?! */
-
 .nft-card {
   display: inline-block;
+}
+
+.nft-card:not(:last-child) {
+  padding-right: 2rem;
 }
 
 #all-cards {
@@ -210,12 +238,16 @@ span {
   white-space: nowrap;
 }
 
-/* nes sh. gaunas */
+.skirtukas {
+  border-bottom: 2px rgb(170, 166, 166) solid;
+  opacity: 0.25;
+  margin-bottom: 4rem;
+}
 
 #section-05 {
   height: 38rem;
   padding-left: 4rem;
-  padding-bottom: 4rem;
+  /* padding-bottom: 4rem; */
   display: flex;
 }
 
@@ -248,6 +280,7 @@ span {
 
 #section-05 div p {
   width: 70%;
+  overflow: auto;
 }
 
 #section-06 {
@@ -262,7 +295,7 @@ span {
   padding-right: 0.7rem;
   color: rgb(177, 174, 174);
   margin-bottom: 3rem;
-  font-size: 1.15rem;
+  font-size: 1.5rem;
 }
 
 ul {
@@ -293,5 +326,133 @@ li {
 
 footer {
   color: rgb(194, 187, 187);
-  text-align: center;
+  padding-left: 4rem;
+}
+
+footer p {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  header nav {
+    display: inline;
+  }
+
+  header nav a {
+    padding-left: 1.5rem;
+  }
+
+  header {
+    padding-right: 4rem;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  #section-01 h1 {
+    font-size: 5rem;
+    width: 85%;
+  }
+
+  #section-01 div {
+    align-self: center;
+  }
+
+  #section-01 div p {
+    width: 75%;
+    padding-bottom: 1rem;
+  }
+
+  #section-01 div img {
+    align-self: center;
+    justify-self: center;
+  }
+
+  #section-02 {
+    margin-right: 4rem;
+    margin-left: 4rem;
+    border-radius: 20px;
+    background-size: contain;
+
+    padding: 12rem 4rem 1rem 4rem;
+  }
+
+  #section-03 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .h2 {
+    font-size: 3rem;
+    color: black;
+    font-weight: bold;
+  }
+
+  #section-01 p,
+  #section-02 p,
+  #section-04 p,
+  #section-05 p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: 1px;
+  }
+
+  #all-cards {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+  }
+
+  .skirtukas {
+    margin-bottom: 8rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  #section-05 img {
+    max-height: 100%;
+  }
+
+  #section-05 {
+    padding-bottom: 0;
+  }
+
+  #section-06 {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 4rem;
+  }
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 4rem;
+    margin-bottom: 5rem;
+    opacity: 0.9;
+    padding-right: 2rem;
+  }
+
+  .footer-links ul li {
+    font-size: 1.2rem;
+  }
+
+  .footer-link-headline {
+    font-weight: bold;
+    padding-bottom: 1.4rem;
+    padding-top: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  footer {
+    color: rgb(194, 187, 187);
+    padding-left: 4rem;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 4rem;
+  }
+
+  footer p {
+    font-size: 1.25rem;
+  }
 }
