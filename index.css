@@ -17,7 +17,7 @@ header nav a:last-child {
   font-size: 1.75rem;
 }
 
-header nav {
+.hidden {
   display: none;
 }
 
@@ -45,11 +45,11 @@ h1 {
 
 #section-01 {
   display: flex;
-  margin: 4rem;
+  margin: 4rem 4rem 0rem 4rem;
 }
 
 .pinkBalvonas img {
-  overflow: auto;
+  overflow: hidden;
   z-index: 1;
 }
 
@@ -60,6 +60,7 @@ h1 {
 
 .pinkBalvonas {
   flex-grow: 1;
+  max-width: 300px;
 }
 
 p {
@@ -106,7 +107,11 @@ button::after {
   height: 20rem;
 
   margin-bottom: 5rem;
-  padding: 4rem 4rem 1rem 4rem;
+  padding: 6rem 4rem 2rem 4rem;
+  /* width: 100vw; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 h2 {
@@ -118,6 +123,7 @@ h2 {
 }
 
 #section-02 p {
+  width: 80%;
   padding-bottom: 0;
   margin-bottom: 0;
   color: black;
@@ -143,6 +149,7 @@ h2 {
   font-size: 2rem;
   line-height: 2.5rem;
   letter-spacing: 1px;
+  padding-bottom: 2rem;
 }
 
 #section-04 p a {
@@ -153,6 +160,10 @@ h2 {
 #section-04 div figure {
   margin: 0;
   margin-bottom: 5rem;
+}
+
+#section-04 div figure:not(:last-child) {
+  margin-right: 1rem;
 }
 
 h4,
@@ -227,10 +238,13 @@ span {
 
 .nft-card {
   display: inline-block;
+  background-color: rgb(240, 238, 238);
+  width: 290px;
+  border-radius: 20px;
 }
 
 .nft-card:not(:last-child) {
-  padding-right: 2rem;
+  margin-right: 2rem;
 }
 
 #all-cards {
@@ -280,7 +294,7 @@ span {
 
 #section-05 div p {
   width: 70%;
-  overflow: auto;
+  padding-bottom: 1rem;
 }
 
 #section-06 {
@@ -334,7 +348,7 @@ footer p {
 }
 
 @media screen and (min-width: 768px) {
-  header nav {
+  .hidden {
     display: inline;
   }
 
@@ -369,6 +383,16 @@ footer p {
     justify-self: center;
   }
 
+  .pinkBalvonas {
+    max-width: 100%;
+  }
+
+  #section-02 {
+    display: block;
+    padding-top: 15rem;
+    margin-bottom: 0;
+  }
+
   #section-02 {
     margin-right: 4rem;
     margin-left: 4rem;
@@ -381,6 +405,10 @@ footer p {
   #section-03 {
     display: flex;
     justify-content: space-between;
+  }
+
+  #section-04 p {
+    padding-bottom: 0;
   }
 
   .h2 {
@@ -416,6 +444,10 @@ footer p {
 
   #section-05 {
     padding-bottom: 0;
+  }
+
+  #section-05 div p {
+    padding-bottom: 2rem;
   }
 
   #section-06 {
