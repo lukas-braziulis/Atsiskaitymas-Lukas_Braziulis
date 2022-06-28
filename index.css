@@ -50,16 +50,9 @@ h1 {
 
 .pinkBalvonas img {
   overflow: hidden;
-  z-index: 1;
-}
-
-.section-01-part-a {
-  flex-grow: 2;
-  z-index: 2;
 }
 
 .pinkBalvonas {
-  flex-grow: 1;
   max-width: 300px;
 }
 
@@ -108,7 +101,6 @@ button::after {
 
   margin-bottom: 5rem;
   padding: 6rem 4rem 2rem 4rem;
-  /* width: 100vw; */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -127,7 +119,6 @@ h2 {
   padding-bottom: 0;
   margin-bottom: 0;
   color: black;
-  font-size: 2rem;
   line-height: 2.5rem;
 }
 
@@ -146,7 +137,6 @@ h2 {
 }
 
 #section-04 p {
-  font-size: 2rem;
   line-height: 2.5rem;
   letter-spacing: 1px;
   padding-bottom: 2rem;
@@ -261,7 +251,6 @@ span {
 #section-05 {
   height: 38rem;
   padding-left: 4rem;
-  /* padding-bottom: 4rem; */
   display: flex;
 }
 
@@ -389,17 +378,10 @@ footer p {
 
   #section-02 {
     display: block;
-    padding-top: 15rem;
-    margin-bottom: 0;
-  }
-
-  #section-02 {
-    margin-right: 4rem;
-    margin-left: 4rem;
+    margin: 0rem 4rem 0rem 4rem;
     border-radius: 20px;
     background-size: contain;
-
-    padding: 12rem 4rem 1rem 4rem;
+    padding: 15rem 4rem 1rem 4rem;
   }
 
   #section-03 {
