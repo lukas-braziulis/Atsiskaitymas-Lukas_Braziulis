@@ -54,6 +54,7 @@ h1 {
 
 .pinkBalvonas {
   max-width: 300px;
+  margin-top: -150px;
 }
 
 p {
@@ -374,6 +375,7 @@ footer p {
 
   .pinkBalvonas {
     max-width: 100%;
+    margin-top: 0;
   }
 
   #section-02 {
